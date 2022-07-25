@@ -1,0 +1,10 @@
+p {
+  font-family: Lato;
+}
+
+model-viewer {
+  position: relative;
+  float: left;
+  height: 50vw;
+  width: 50%;
+}

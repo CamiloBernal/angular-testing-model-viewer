@@ -1,0 +1,33 @@
+<hello name="{{ name }}"></hello>
+<p>Testing attributes data binding.</p>
+
+<model-viewer
+  camera-controls
+  [attr.camera-orbit]="cameraOrbit"
+  [attr.src]="src"
+  alt="A 3D model of an astronaut"
+  data-js-focus-visible=""
+  ar-status="not-presenting"
+>
+</model-viewer>
+
+<model-viewer
+  camera-controls
+  camera-orbit="45deg 55deg 2.5m"
+  src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+  alt="A 3D model of an astronaut"
+  data-js-focus-visible=""
+  ar-status="not-presenting"
+>
+</model-viewer>
+
+<p>Base 64 source</p>
+<model-viewer
+  camera-controls
+  camera-orbit="45deg 55deg 2.5m"
+  [attr.src]="srcBase64"
+  alt="A 3D model of a cube"
+  data-js-focus-visible=""
+  ar-status="not-presenting"
+>
+</model-viewer>
